@@ -1,0 +1,23 @@
+[workspace]
+members = [
+  "y-dash"
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.0.0"
+authors = ["Fangdun Tsai <cfddream@gmail.com>"]
+edition = "2021"
+homepage = "https://github.com/viz-rs/y-dash"
+documentation = "https://docs.rs/y-dash"
+repository = "https://github.com/viz-rs/y-dash"
+license = "MIT"
+
+[workspace.dependencies]
+y-dash = { version = "0.0.0", path = "y-dash" }
+
+yrs = "0.16.10"
+
+[workspace.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
