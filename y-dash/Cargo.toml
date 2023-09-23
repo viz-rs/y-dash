@@ -1,5 +1,8 @@
 [package]
 name = "y-dash"
+description = "A yrs server by viz"
+keywords = ["yrs", "viz"]
+
 version.workspace = true
 authors.workspace = true
 edition.workspace = true
@@ -7,5 +10,9 @@ homepage.workspace = true
 documentation.workspace = true
 repository.workspace = true
 license.workspace = true
-description = "A yrs server by viz"
-keywords = ["yrs", "viz"]
+
+[dependencies]
+viz = { git = "https://github.com/viz-rs/viz.git", rev = "a5c26fe", version = "0.5.0-rc.2" }
+
+yrs = { workspace = true }
+tokio = { workspace = true, features = ["full"] }

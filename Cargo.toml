@@ -16,7 +16,8 @@ license = "MIT"
 [workspace.dependencies]
 y-dash = { version = "0.0.0", path = "y-dash" }
 
-yrs = "0.16.10"
+yrs = { git = "https://github.com/y-crdt/y-crdt.git", rev = "bb26eb7", version = "0.16.10" }
+tokio = { version = "1.32", optinoal = true }
 
 [workspace.metadata.docs.rs]
 all-features = true
